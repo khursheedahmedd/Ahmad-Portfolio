@@ -1,5 +1,5 @@
 var type = new Typed('.typing-text', {
-  strings: ['a Web Developer', 'an Aspiring Coder', 'a Computer Science Student'],
+  strings: ['a Web Developer', 'an Aspiring Coder', 'a Software Engineering Student'],
   typeSpeed: 120,
   loop: true
 });
@@ -13,24 +13,24 @@ $(document).ready(function () {
     $('#menu').removeClass('fa-times');
     $('header').removeClass('toggle');
 
-    if($(window).scrollTop() > 0){
+    if ($(window).scrollTop() > 0) {
       $('.top').show();
-    }else{
+    } else {
       $('.top').hide();
     }
   });
-  
+
   //smooth scroll
-  $('a[href*="#"]').on('click',function(e){
+  $('a[href*="#"]').on('click', function (e) {
 
     e.preventDefault();
 
     $('html, body').animate({
 
-      scrollTop : $($(this).attr('href')).offset().top,
+      scrollTop: $($(this).attr('href')).offset().top,
 
     },
-      1000, 
+      1000,
       'linear'
     );
 
